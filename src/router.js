@@ -3,6 +3,7 @@ import HomeView from './views/HomeView.vue'
 import WalkerDetailView from './views/WalkerDetailView.vue'
 import ReserveView from './views/ReserveView.vue'
 import ReviewView from './views/ReviewView.vue'
+import BecomeWalkerView from './views/BecomeWalkerView.vue'
 
 
 export default createRouter({
@@ -12,5 +13,6 @@ export default createRouter({
     { path: '/walkers/:id', name: 'walker', component: WalkerDetailView },
     { path: '/walkers/:id/reserve', name: 'reserve', component: ReserveView },
     { path: '/review', name: 'review', component: ReviewView },
+    { path: '/become-walker', name: 'become-walker', component: BecomeWalkerView }
   ],
 })
