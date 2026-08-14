@@ -169,7 +169,7 @@ const PREDEFINED_SLOTS = [
         lastName,
         email: email.toLowerCase(),
         location,
-        services: services?.length ? services : ['dog walk'],
+        services: services?.length ? [...services] : ['dog walk'],
         availableSlots: [...new Set(availableSlots)],
         createdAt: new Date().toISOString(),
       }
